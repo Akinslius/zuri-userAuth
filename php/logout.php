@@ -1,17 +1,13 @@
 <?php
-function logout(){
 session_start();
+function logout(){
 //remove all session variable
 session_unset();
 //destroy session
 session_destroy();
-header('location:../');
+//redirect to login page
+header('location:../forms/login.html');
 
-    /*
-Check if the existing user has a session
-if it does
-destroy the session and redirect to login page
-*/
 }
 logout();
 

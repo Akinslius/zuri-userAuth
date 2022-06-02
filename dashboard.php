@@ -32,6 +32,8 @@ session_start();
 <div class="container justify-content-center">
      <h1 class="">Welcome to Zuri Authentication <?php  echo $_SESSION['user']; ?> </h1>
 </div>
-   
+
+
+
 </body>
 </html>

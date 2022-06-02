@@ -30,7 +30,7 @@ if ($f = strstr($file, $email) and strstr($file, $password)) {
           </script>';
 } else {
     echo '<script>alert("Invalid Username or Password");
-          window.location="../dashboard.php";
+          window.location="../forms/login.html";
           </script>';
 
 }
