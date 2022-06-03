@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['user'])) {
+
+    header('location:forms/login.html');
+
+}
 
 ?>
 
@@ -30,7 +35,7 @@ session_start();
   </div>
 </nav>
 <div class="container justify-content-center">
-     <h1 class="">Welcome to Zuri Authentication <?php  echo $_SESSION['user']; ?> </h1>
+     <h1 class="">Welcome to Zuri Authentication <?php echo $_SESSION['user']; ?> </h1>
 </div>
 
 
