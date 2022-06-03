@@ -1,13 +1,18 @@
 <?php
 session_start();
-function logout(){
+if (!isset($_SESSION['user'])) {
+
+    header('location:forms/login.html');
+
+}
+function logout()
+{
 //remove all session variable
-session_unset();
+    session_unset();
 //destroy session
-session_destroy();
+    session_destroy();
 //redirect to login page
-header('location:../forms/login.html');
+    header('location:../forms/login.html');
 
 }
 logout();
-
